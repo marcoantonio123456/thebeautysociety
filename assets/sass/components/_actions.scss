@@ -1,3 +1,4 @@
+
 /* Actions */
 
 	ul.actions {
@@ -14,7 +15,14 @@
 
 		&.special {
 			@include vendor('justify-content', 'center');
-			width: calc(100% + #{_size(element-margin) * 0.5});
+			width: 100%;
+			margin-left: 0;
+
+			li {
+				&:first-child {
+					padding-left: 0;
+				}
+			}
 		}
 
 		&.stacked {
