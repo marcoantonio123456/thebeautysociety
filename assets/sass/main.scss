@@ -3,65 +3,58 @@
 @import 'libs/mixins';
 @import 'libs/vendor';
 @import 'libs/breakpoints';
-@import 'fontawesome-all.min.css';
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300');
-
+@import 'libs/grid';
+@import 'libs/flexgrid';
+@import 'font-awesome.min.css';
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600');
 
 // Breakpoints.
-
 	@include breakpoints((
+		default:   (1681px,   null     ),
 		xlarge:    (1281px,   1680px   ),
-		large:     (961px,    1280px   ),
-		medium:    (737px,    960px    ),
+		large:     (981px,    1280px   ),
+		medium:    (737px,    980px    ),
 		small:     (481px,    736px    ),
 		xsmall:    (361px,    480px    ),
 		xxsmall:   (null,     360px    )
 	));
 
-/* Icon (alt) */
-
-	@mixin icon-alt($content: false, $link: false) {
-		@include icon($content);
-		$size: _size(border-width) * 1.25;
-
-		&:before {
-			color: _palette(bg);
-			text-shadow: $size 0px 0px _palette(border),
-						($size * -1) 0px 0px _palette(border),
-						0px $size 0px _palette(border),
-						0px ($size * -1) 0px _palette(border);
-
-		}
-
-		@if $link {
-			&:hover {
-				&:before {
-					text-shadow: $size 0px 0px _palette(highlight),
-								($size * -1) 0px 0px _palette(highlight),
-								0px $size 0px _palette(highlight),
-								0px ($size * -1) 0px _palette(highlight);
-				}
-			}
-		}
+// Color.
+	@mixin color($p) {
+		@include color-typography($p);
+		@include color-button($p);
+		@include color-form($p);
+		@include color-list($p);
+		@include color-table($p);
+		@include color-highlights($p);
+		@include color-testimonials($p);
 	}
 
 // Base.
-
-	@import 'base/reset';
 	@import 'base/page';
+	@import 'base/reset';
 	@import 'base/typography';
 
 // Component.
-
-	@import 'components/form';
-	@import 'components/icon';
-	@import 'components/list';
-	@import 'components/actions';
-	@import 'components/icons';
+	@import 'components/inner';
 	@import 'components/button';
+	@import 'components/form';
+	@import 'components/list';
+	@import 'components/table';
+	@import 'components/highlights';
+	@import 'components/testimonials';
+	@import 'components/actions';
+	@import 'components/grid';
+	@import 'components/icon';
+	@import 'components/icons';
+	@import 'components/image';
+	@import 'components/wrapper';
 
 // Layout.
-
-	@import 'layout/main';
+	@import 'layout/banner';
+	@import 'layout/cta';
 	@import 'layout/footer';
-	@import 'layout/wrapper';
+	@import 'layout/header';
+	@import 'layout/heading';
+	@import 'layout/main';
+	@import 'layout/menu';
