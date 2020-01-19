@@ -32,8 +32,6 @@
 }
 html body{
   overflow-x: hidden;}
-
-
 @-ms-viewport {
   width: device-width; }
 body {
@@ -45,10 +43,8 @@ body {
 html {
   overflow-x: hidden;
   box-sizing: border-box; }
-
 *, *:before, *:after {
   box-sizing: inherit; }
-
 body {
   background: #ffffff; }
   body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -60,7 +56,6 @@ body {
     -webkit-transition: none !important;
     -ms-transition: none !important;
     transition: none !important; }
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -85,22 +80,8 @@ footer, header, hgroup, menu, nav, section {
 
 ol, ul {
   list-style: none; }
-
 body {
   -webkit-text-size-adjust: none; }
-/*
-html {
-  font-size: 13pt; }
-  @media screen and (max-width: 1680px) {
-    html {
-      font-size: 11pt; } }
-  @media screen and (max-width: 980px) {
-    html {
-      font-size: 12pt; } }
-  @media screen and (max-width: 480px) {
-    html {
-      font-size: 11pt; } }
-*/
 body {
   background-color: #ffffff;
   color: #000000; }
@@ -113,14 +94,10 @@ body{
   font-family: 'avenir', sans-serif;
   font-size: 1rem;
   line-height: 1.65; }
-
-
 strong, b {
   font-weight: 600; }
-
 p {
   margin: 0 0 2rem 0; }
-
 header.special {
   font-family: 'terminaregular',sans-serif;
   text-align: center;
@@ -129,7 +106,6 @@ header.special {
     max-width: 75%;
     margin-left: auto;
     margin-right: auto; }
-
 h1, h2{
   font-weight: 300;
   line-height: 1.5;
@@ -138,7 +114,6 @@ h1, h2{
   h1 a, h2 a{
     color: inherit;
     text-decoration: none; }
-
 h1 {
   font-size: 2rem;
   line-height: 1.2; }
@@ -146,8 +121,6 @@ h1 {
 h2 {
   font-size: 2.25rem;
   line-height: 1.3; }
-
-
 @media screen and (max-width: 736px) {
   h1 {
     font-size: 2.75rem;
@@ -159,19 +132,15 @@ h2 {
 
   h3 {
     font-size: 1.25rem; } }
-
 h1, h2{
   color: #222222; }
 
 .inner {
   margin: 20px;
-  /*margin-top: 60px;
-  margin-left: 4.375em;*/
   max-width: calc(100% - 6rem); }
   @media screen and (max-width: 480px) {
     .inner {
       max-width: calc(100% - 3rem); } }
-
 .menu{
   display: -moz-flex;
   display: -webkit-flex;
@@ -182,8 +151,6 @@ h1, h2{
   margin-left: 65em;
   margin-right: 10em;
   z-index: 1;
-
-
 }
 .links{
   font-family: 'avenir';
@@ -195,17 +162,14 @@ h1, h2{
   padding: 1rem;
   white-space: nowrap;
 }
-
 .reviews{
   margin-top: 14em;
 }
-
 .reviews h2{
   font-family: 'terminaregular', sans-serif;
   margin-left:2em;
   margin-bottom: 1em;
 }
-
 .highlights {
   width: 100%;
   margin: 5rem 0;
@@ -462,29 +426,22 @@ h1, h2{
     opacity: 0; }
   body.is-preload #banner:before {
     opacity: 1; }
-
-
 .inner_banner img{
   width:70%;
   margin-top: 20em;
   margin-right: 5vw;
-  margin-left: 5vw;
-
-    
+  margin-left: 5vw;   
 }
 .inner_banner{
   z-index: -3;
-
 }
-
 #cta {
   background-color: #e9e9e9;
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed;
   position: relative;
   text-align: center;
-  z-index: 1;
-}
+  z-index: 1;}
   #cta h1, #cta h2, #cta h3 {
     font-family: 'terminaregular', sans-serif;
     color: #222222; }
@@ -494,16 +451,13 @@ h1, h2{
     color: #222222;
     max-width: calc(50% - 3rem);
     text-align: center;
-    transform: translate(28em,0);
-
-  }
+    transform: translate(28em,0);}
   @media screen and (max-width: 980px) {
     #cta {
       background-attachment: scroll; } }
 #cta .inner{
    align-content: center;
-   padding:20px;
-}
+   padding:20px;}
 #footer {
   background-color: #111111;
   color: rgba(255, 255, 255, 0.5);
@@ -561,14 +515,12 @@ h1, h2{
   @media screen and (max-width: 480px) {
     #footer {
       padding: 2rem 0 0.1rem 0 ; } }
-
 #footer p{
   margin:0 !important;
 }
 .tbslogo{
   margin-top: 6em;
 }
-
 #header {
   -moz-align-items: center;
   -webkit-align-items: center;
@@ -652,16 +604,6 @@ h1, h2{
   margin-top: 2px;
 }
 
-
-
-
-
-
-
-/*do media query for 768px 
-fis instagram for 
-
-*/
 
 
 @media screen and (min-width: 1920px) {
